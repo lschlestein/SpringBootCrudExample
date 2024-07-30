@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Nova Pessoa</title>
+</head>
+<body>
+<h3>CADASTRO</h3>
+<form action="#" th:action="@{/pessoa/save}" th:object="${pessoa}" method="post">
+    <div>
+        <label for="" class="label">Nome</label>
+        <input type="text" placeholder="Meu Nome"  th:field="*{nome}" required>
+    </div>
+    <div>
+        <label for="" class="label">Email</label>
+        <input type="email" placeholder="email@" th:field="*{email}" required>
+    </div>
+    <div>
+        <label for="" class="label">Fone</label>
+        <input type="text" placeholder="(00)00000-0000"  th:field="*{fone}" required>
+    </div>
+    <input type="submit" value="Salvar"/>
+</form>
+</body>
+</html>
