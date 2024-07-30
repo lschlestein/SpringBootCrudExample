@@ -1,4 +1,4 @@
-#Spring Boot CRUD
+# Spring Boot CRUD
 Esse repositório implementa um exemplo simples de uma aplicação MVC com um CRUD.
 Para rodar esse projeto é necessário configurar uma database de nome CRUD, no Postgres. Verificar usuário e senha (user: postgres, senha:1234)
 Também é possível remover a dependência do Postgres do arquivo Pom.xml, e adicionar o H2, que implementa uma DB em memória.
